@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--light-gray);
+    display: grid;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+.qr-code {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr 1fr;
+    max-width: 348px;
+    padding: 24px;
+    place-self: center;
+    text-align: center;
+}
+
+.qr-code__thumb {
+    background-image: url('../images/image-qr-code.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+.qr-code__title {
+    font-size: 1.5rem;
+    padding: 0 .75rem;
+}
+
+.qr-code__txt {
+    padding: 0 .75rem;
+    opacity: .5;
+}
